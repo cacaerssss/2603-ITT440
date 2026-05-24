@@ -6,7 +6,8 @@
 
 **Prepared by : SITI AISYAH BINTI LOKHMAN**  
 **Student ID : 2024347199**  
-**Group : CDCS2555A**
+**Course : ITT440 - Network Programming**  
+**Group : CDCS2555A**  
 
 ## 🌟 Introduction  
 Performance testing helps us understand how a system behaves when many users access it at the same time.
