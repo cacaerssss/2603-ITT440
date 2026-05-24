@@ -1,4 +1,5 @@
 # 🚀Performance Analysis of Fake Store API under Concurrent Load using Gatling
+![Image Description](https://github.com/cacaerssss/Gat_shine/blob/09e42323e9294e7594b396df3984304c49aa9844/images/gatling.png)
 > Let’s learn how to perform professional API performance testing using Gatling Community Edition with real Load, Stress, and Spike testing scenarios.
 
 > “Performance testing is not about breaking systems. It is about understanding how systems behave when reality happens.”
@@ -192,7 +193,7 @@ mvn gatling:test
 ## 📊 Comparative of Test Result Summary  
 | Performance Metric | Load Test (Baseline Traffic) | Stress Test (Sustained Volume) | Spike Test (Sudden Traffic Burst) | Description |
 |---|---|---|---|---|
-| Total Test Volume | 150 requests | 1,000 requests | 3,000 requests | Measures total data capacity processed during the test duration |
+| Number Concurrent user | 50 user over 30 sec | 1,000 user over 60 sec | 1,000 user instantly open the API | Measures total data capacity processed during the test duration |
 | Throughput (Mean Cnt/s) | 4.41 req/s | 15.87 req/s | 166.67 req/s | Shows overall system ingestion speed. spike scales ~37x over baseline |
 | Error Rate (% KO) | 0% (0 / 150) | 0% (0 / 1,000) | 0% (0 / 3,000) | Excellent stability with 100% request success across all loads |
 | Min Response Time | 213 ms | 283 ms | 219 ms | Best case latency under ideal conditions (no queue delay) |
@@ -224,7 +225,7 @@ The data shows that the Open Products Page is the heaviest part of your app. Und
 🟢 Scalability: Maintained fast performance profiles during standard concurrency ramps.
 | Chart | Description |
 |---|---|
-| ![Image Description](https://github.com/cacaerssss/Gat_shine/blob/b556584cb68b3e514ba5dca25d6c411ca14bc9dc/images/Global%20Gatling%20Documentation%20LT.png) | 150 total request in Global Gatling Data |
+| ![Image Description](https://github.com/cacaerssss/Gat_shine/blob/b556584cb68b3e514ba5dca25d6c411ca14bc9dc/images/Global%20Gatling%20Documentation%20LT.png) | 50 total request user over 30 sec |
 | ![Image Description](https://github.com/cacaerssss/Gat_shine/blob/b556584cb68b3e514ba5dca25d6c411ca14bc9dc/images/concurrent%20user%20LT.png) | Concurrent user for load test |
 | ![Image Description](https://github.com/cacaerssss/Gat_shine/blob/b556584cb68b3e514ba5dca25d6c411ca14bc9dc/images/Request%20%26%20response%20LT.png) | Number of request and response/sec |
 
@@ -235,7 +236,7 @@ The data shows that the Open Products Page is the heaviest part of your app. Und
 🟢 Scalability: Smoothly maintained performance as heavy sustained traffic pushed throughput to ~16 requests per second.  
 | Chart | Description |
 |---|---|
-| ![Image Description](https://github.com/cacaerssss/Gat_shine/blob/b556584cb68b3e514ba5dca25d6c411ca14bc9dc/images/Global%20Gatling%20Documentation%20STT.png) | 1,000 total request in Global Gatling Data |
+| ![Image Description](https://github.com/cacaerssss/Gat_shine/blob/b556584cb68b3e514ba5dca25d6c411ca14bc9dc/images/Global%20Gatling%20Documentation%20STT.png) | 1,000 total request user over 60 sec |
 | ![Image Description](https://github.com/cacaerssss/Gat_shine/blob/b556584cb68b3e514ba5dca25d6c411ca14bc9dc/images/concurrent%20user%20stt.png) | Concurrent user for stress test |
 | ![Image Description](https://github.com/cacaerssss/Gat_shine/blob/b556584cb68b3e514ba5dca25d6c411ca14bc9dc/images/Request%20%26%20response%20stt.png) | Number of request and response/sec |
 
@@ -247,7 +248,7 @@ The data shows that the Open Products Page is the heaviest part of your app. Und
 
 | Chart | Description |
 |---|---|
-| ![Image Description](https://github.com/cacaerssss/Gat_shine/blob/b556584cb68b3e514ba5dca25d6c411ca14bc9dc/images/Global%20Gatling%20Documentation%20SPT.png) | 3,000 total request in Global Gatling Data |
+| ![Image Description](https://github.com/cacaerssss/Gat_shine/blob/b556584cb68b3e514ba5dca25d6c411ca14bc9dc/images/Global%20Gatling%20Documentation%20SPT.png) |  1,000 user instantly open the API |
 | ![Image Description](https://github.com/cacaerssss/Gat_shine/blob/b556584cb68b3e514ba5dca25d6c411ca14bc9dc/images/concurrent%20user%20spt.png) | Concurrent user for spike test |
 | ![Image Description](https://github.com/cacaerssss/Gat_shine/blob/b556584cb68b3e514ba5dca25d6c411ca14bc9dc/images/Request%20%26%20response%20spt.png) | Number of request and response/sec |
 
@@ -267,3 +268,4 @@ Basically, these 3 tests show that our web app is super stable, but it definitel
 The good news is that the app has an amazing, rock-solid foundation. It handles standard and heavy traffic easily without buckling. The bad news is that its scaling is too slow. Instead of spawning more server power instantly when a spike happens, it just makes users wait in a slow line. If we launched this in production right now, a sudden surge of users would cause huge lag.
 
 ## 📹 Video Demostration
+### 📌 [ITT440 - Video Demostration Performance Analysis of Fake Store API Under Concurrent Load using Gatling](https://youtu.be/IxsQY8MVjUw?si=Oa9nJLifEKZHdTmS)
